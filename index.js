@@ -17,13 +17,8 @@ connectDB();
 
 const app = express();
 
-const corsOptions = {
-    origin: 'https://hackathon-frontend-blush.vercel.app',  // Your frontend URL
-};
-
-
 // Middleware
-app.use(cors(corsOptions)); // Enable CORS for all routes
+app.use(cors()); // Enable CORS for all routes
 app.use(express.json()); // Parse JSON requests
 
 // API Routes
