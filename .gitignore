@@ -1,38 +1,21 @@
-# Node.js
-node_modules/
-
-# Logs
-logs/
-*.log
-*.log.*
-
-# Environment files
+# Ignore environment files (make sure .env is not pushed)
 .env
 
-# Coverage folder (for code coverage tools like Istanbul or Jest)
-coverage/
+# Ignore node_modules folder
+node_modules/
 
-# npm package lock files (if you prefer not to track them)
-package-lock.json
-yarn.lock
+# Optional: Ignore log files
+logs/
+*.log
 
-# OS-specific files
+# Ignore system-specific files (e.g., macOS or Windows)
 .DS_Store
 Thumbs.db
 
-# IDE files
+# Ignore IDE-specific files
 .vscode/
 .idea/
-*.sublime-workspace
 
-# Build artifacts
+# Ignore build artifacts if any (e.g., /dist or /build)
 /dist
 /build
-
-# Dependencies for specific tools
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Optional: ignore other dependencies for deployment or build tools
-/.env.*
